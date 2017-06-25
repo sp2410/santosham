@@ -661,7 +661,9 @@ background-color: #242424;
 }
 
 
-
+.icon-bar{
+	background: rgb(255,255,0);  
+}
 
 
 
