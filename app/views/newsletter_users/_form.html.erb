@@ -1,0 +1,10 @@
+<%= form_for [ NewsletterUser.new ] do |form| %> 
+
+  <div class="field">
+    <%= form.label :email, :style => "color: yellow;" %>
+    <%= form.text_field :email, :style => "color: black;" %>
+  
+
+    <%= form.submit 'Sign Up', :class => "btn btn-primary" %>
+  </div>
+<% end %>
