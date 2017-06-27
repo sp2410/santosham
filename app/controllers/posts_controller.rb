@@ -23,7 +23,25 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    
   end
+
+  def astrology
+    @posts = Post.where(:posttype => 0)
+  end
+
+  def meditation
+    @posts = Post.where(:posttype => 1)
+  end
+
+  def yoga
+    @posts = Post.where(:posttype => 2)
+  end
+
+  def life
+    @posts = Post.where(:posttype => 3)
+  end
+
 
   # POST /posts
   # POST /posts.json

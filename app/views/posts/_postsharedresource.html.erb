@@ -1,0 +1,25 @@
+<%= @posts.each do |post|%>
+
+	<div class = "col-lg-12 col-sm-12 col-xs-12" >
+		<div class = "w3-panel w3-card-2">
+			<div class = "w3-panel w3-card-2">
+					<h1>
+					  <strong>Title:</strong>
+					  <%= post.title %>
+					</h1>
+
+					<p>		  
+					  <%= post.resource %>
+					</p>
+					
+			</div>
+		</div>
+
+	<%= link_to 'Edit', edit_post_path(post) %>
+	</div>
+
+<% end %>
+
+
+
+
